@@ -1,17 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{html,js}', './src/input.css'],
+  content: ["./src/**/*.{html,js,php}"],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('./src/assets/Mask group.png')",
+        'gradient-to-r': 'var(--bg-gradient-colors)',
       },
-      colors: {
-        backgroud: '#171B1A',
-        'yellow': '#F89222',
-        customGray: '#8F8F8F',
+      boxShadow: {
+        'box-shadow': '0px 0px 15px 0px rgba(0, 0, 0, 0.06)',
+        'box-shadow-white': '0px 0px 20px 0px rgba(255, 255, 255, 0.2)'
+      },
+      screens: {
+        '3xl': '1800px',
       }
     },
   },
   plugins: [],
-}
+};

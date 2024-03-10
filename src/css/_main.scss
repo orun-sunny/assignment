@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --bg-gradient-colors: linear-gradient(to right, #f5bd4d, #f89222);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/Mask.png");
+  background-repeat: repeat-y;
+  background-size: fill;
+  background-position: center center;
+  font-family: "DM Sans", sans-serif;
+}
+.nav_section {
+  background-image: url("../img/Rectangle 1099.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: 100px;
+  min-height: 400px;
+}
+.language_section {
+  background-image: url("../img//Rectangle 1099.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100px;
+  min-height: 400px;
+}
