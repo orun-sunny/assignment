@@ -1,9 +1,4 @@
-/**
- *   Gulp with TailwindCSS - An CSS Utility framework build setup with SCSS
- *   Author : Manjunath G
- *   URL : manjumjn.com | lazymozek.com
- *   Twitter : twitter.com/manju_mjn
- **/
+
 
 /*
   Usage:
@@ -146,21 +141,7 @@ function prodStyles() {
         cssnano(),
       ])
     )
-    // .pipe(
-    //   purgecss({
-    //     ...options.config.purgecss,
-    //     defaultExtractor: (content) => {
-    //       // without arbitray selectors
-    //       // const v2Regex = /[\w-:./]+(?<!:)/g;
-    //       // with arbitray selectors
-    //       const v3Regex = /[(\([&*\])|\w)-:./]+(?<!:)/g;
-    //       const broadMatches = content.match(v3Regex) || [];
-    //       const innerMatches =
-    //         content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || [];
-    //       return broadMatches.concat(innerMatches);
-    //     },
-    //   })
-    // )
+
     .pipe(dest(options.paths.build.css));
 }
 
